@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url("pictures/back.gif");
+    background-size: cover;
+}
+
+header {
+    width: 100vw;
+    height: 6vh;
+    font-size: 4rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+    padding: 1rem;
+}
+
+main {
+    height: 94vh;
+    display: flex;
+    flex-direction: row;
+    background-size:cover;
+    
+}
+
+#sidebar {
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+#sidebar-title {
+    font-size: 2rem;
+    color: blue;
+    font-weight: bold;
+}
+
+.buttonfilter {
+    width: 100%;
+    height: 4%;
+    background-color: lightblue;
+    border: 1px solid blue;
+    color: black;
+    font-weight: bold;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.buttonfilter:hover {
+    background-color: lightcyan;
+}
+
+#pricepicker {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#info {
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#products {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-content: start;
+    overflow-y: scroll;
+    overflow-x: visible;
+    flex-grow: 0; /* Prevents the item from growing */
+    flex-shrink: 0;
+}
+
+#products::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    height: 20%;
+    aspect-ratio: 1/1;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    z-index: 1;
+}
+
+.product:hover {
+    background-color: rgb(238, 235, 235);
+    transition: 0.5s;
+}
+
+img  {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title-prix {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+.price {
+    text-decoration: none;
+    color: blue;
+}
+
+a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    height: 10vh;
+    z-index: 3;
+    position: relative;
+    background-image: url("pictures/back.gif");
+
+}
